@@ -1,22 +1,37 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Goodreads Multi-Tag Search</title>
-  <link rel="stylesheet" href="search.css">
+  <link rel="stylesheet" href="search.css" />
 </head>
 <body>
   <header>
-    <h1>Multi-Tag Search</h1>
-    <label>Exclusive Shelf
-      <input id="shelf" placeholder="to-read, currently-reading, read">
+    <h1>Goodreads Multi-Tag Search</h1>
+
+    <label>Exclusive shelf
+      <input id="shelf" placeholder="to-read, read, currently-reading" />
     </label>
+
     <label>Tags
-      <input id="tags"  placeholder="enter your tags">
+      <input id="tags" placeholder="enter tags" />
     </label>
+
     <button id="refresh">🔄 Refresh from Goodreads</button>
   </header>
-  <main id="results"></main>
+
+  <!-- loading banner -->
+  <div id="loading" hidden>Loading…</div>
+
+  <!-- result table -->
+  <table id="results">
+    <thead>
+      <tr>
+        <th>Cover</th><th>Title</th><th>Author</th><th>Avg ★</th><th>Shelves</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
 
   <script type="module" src="search.js"></script>
 </body>

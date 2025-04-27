@@ -39,6 +39,10 @@
 
         books[id] = {
           id,
+          avg   : parseFloat(
+                      tr.querySelector("td.field.avg_rating, td.field.avg_rating span")?.textContent
+                      ?.replace(/[^\d.]+/g,"")      // keep “4.27” – drop other chars
+                    ) || null,
           title : tr.querySelector(".title a") ?.textContent.trim() ?? "",
           author: tr.querySelector(".author a")?.textContent.trim() ?? "",
           shelf : exclusive,
