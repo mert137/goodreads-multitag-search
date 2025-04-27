@@ -2,7 +2,7 @@
     "name": "Goodreads Multi-Tag Search",
     "version": "1.1.0",
     "manifest_version": 3,
-    "description": "Click the icon → filter your Goodreads library by shelf + multiple tags.",
+    "description": "Filter your Goodreads library by multiple tags.",
     "icons": { "48": "icons/48.png" },
   
     "permissions": ["storage","scripting","activeTab"],
