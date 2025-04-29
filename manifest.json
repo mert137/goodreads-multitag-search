@@ -5,7 +5,7 @@
     "description": "Filter your Goodreads library by multiple tags.",
     "icons": { "48": "icons/48.png" },
   
-    "permissions": ["storage","scripting","activeTab"],
+    "permissions": ["storage","activeTab"],
   
     "host_permissions": [
         "*://*.goodreads.com/*",
